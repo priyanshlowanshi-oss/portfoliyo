@@ -68,48 +68,76 @@
                     </div>
                     <div class="social-text">
                         <span class="social-label">Drop an email</span>
-                        <span class="social-name">hello@arjun.dev</span>
+                        <span class="social-name">priyanshlowanshi@gmail.com</span>
                     </div>
                     <span class="social-arrow">&rarr;</span>
                 </a>
             </div>
         </div>
 
-        <!-- Right Column: Premium Contact Box Form -->
-        <div class="contact-form-card">
-            <div class="form-card-header">
-                <span class="form-title">Start a conversation</span>
-                <span class="form-status-tag"><span class="status-dot"></span> Usually replies in 24h</span>
-            </div>
 
-            <form class="premium-interactive-form">
-                <!-- Name Input Field -->
-                <div class="interactive-form-group">
-                    <label>Your name</label>
-                    <input type="text" value="Priyansh Lowanshi" placeholder="Enter your name" required>
-                </div>
-                
-                <!-- Email Input Field -->
-                <div class="interactive-form-group">
-                    <label>Email address</label>
-                    <input type="email" value="priyanshlowanshi@gmail.com" placeholder="Enter your email" required>
-                </div>
-                
-                <!-- Message Input Field -->
-                <div class="interactive-form-group">
-                    <label>Tell me about your idea</label>
-                    <textarea rows="4" placeholder="Your message here..." required></textarea>
-                </div>
+<!-- Right Column: Premium Contact Box Form -->
+<div class="contact-form-card">
 
-                <!-- Glow Submit Button -->
-                <button type="submit" class="form-submit-glow-btn">
-                    Send message <span class="btn-arrow">&rarr;</span>
-                </button>
-            </form>
-        </div>
+    <div class="form-card-header">
+        <span class="form-title">Start a conversation</span>
 
+        <span class="form-status-tag">
+            <span class="status-dot"></span>
+            Usually replies in 24h
+        </span>
     </div>
 
+    <form action="https://api.web3forms.com/submit"
+          method="POST"
+          class="premium-interactive-form">
+
+        <!-- Web3Forms Access Key -->
+        <input type="hidden"
+               name="access_key"
+               value="bd349cba-bc21-42c0-b23c-d39bf526b432">
+
+
+        <!-- Name -->
+        <div class="interactive-form-group">
+            <label for="name">Your name</label>
+            <input type="text"
+                   id="name"
+                   name="name"
+                   placeholder="Enter your name"
+                   required>
+        </div>
+
+        <!-- Email -->
+        <div class="interactive-form-group">
+            <label for="email">Email address</label>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="Enter your email"
+                   required>
+        </div>
+
+        <!-- Message -->
+        <div class="interactive-form-group">
+            <label for="message">Tell me about your idea</label>
+            <textarea id="message"
+                      rows="4"
+                      name="message"
+                      placeholder="Your message here..."
+                      required></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="form-submit-glow-btn">
+            Send message <span class="btn-arrow">&rarr;</span>
+        </button>
+
+    </form>
+</div>
+
+
+               
     <!-- PRESET PREMIUM MINI FOOTER -->
     <div class="premium-footer-bar">
         <div class="footer-logo">AM.</div>
